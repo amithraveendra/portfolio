@@ -643,6 +643,98 @@ body {
     transform: scale(1.05);
 }
 
+/* EDUCATION SECTION */
+.education {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.9) 0%, rgba(22, 33, 62, 0.8) 100%);
+    border-top: 2px solid var(--gold);
+    text-align: center;
+}
+
+.education h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    background: linear-gradient(135deg, var(--gold), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 2px;
+}
+
+.education-card {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, rgba(22, 33, 62, 0.8) 0%, rgba(26, 26, 46, 0.6) 100%);
+    border: 2px solid rgba(255, 215, 0, 0.4);
+    border-radius: 15px;
+    padding: 2.5rem 3rem;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.education-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.3), inset 0 0 15px rgba(255, 215, 0, 0.05);
+    transform: translateY(-5px);
+}
+
+.education-icon {
+    font-size: 4rem;
+    flex-shrink: 0;
+}
+
+.education-content h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
+    color: var(--neon-blue);
+    margin-bottom: 0.4rem;
+    letter-spacing: 1px;
+}
+
+.edu-field {
+    color: var(--accent);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.edu-institution {
+    color: rgba(234, 234, 234, 0.8);
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+}
+
+.edu-meta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.edu-badge {
+    background: rgba(255, 215, 0, 0.15);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .education-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+    .edu-meta {
+        justify-content: center;
+    }
+}
+
 /* CONTACT SECTION */
 .contact {
     padding: 6rem 2rem;
