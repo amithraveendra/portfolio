@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMITH RAVEENDRA - SRE Agent of SHIELD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="stars"></div>
+
+    <nav class="navbar">
+        <div class="logo">⚡ SHIELD AGENT</div>
+        <ul class="nav-links">
+            <li><a href="#hero">PROFILE</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#powers">POWERS</a></li>
+            <li><a href="#missions">MISSIONS</a></li>
+            <li><a href="#arsenal">ARSENAL</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-card">
+                <div class="agent-badge">RELIABILITY AGENT</div>
+                <h1 class="hero-name">AMITH</h1>
+                <p class="hero-title">Site Reliability Engineer</p>
+                <p class="hero-subtitle">Infrastructure Commander • Chaos Warrior • DevOps Champion</p>
+                <div class="threat-level">
+                    <span class="threat-label">THREAT LEVEL:</span>
+                    <div class="threat-bar">
+                        <div class="threat-fill" style="width: 95%"></div>
+                    </div>
+                </div>
+                <p class="hero-description">
+                    Site Reliability Engineer with production experience at PhonePe, managing large-scale Linux
+                    infrastructure, NGINX edge systems, distributed databases, and observability platforms. Experienced
+                    in on-call operations, incident response, HA cluster design, and infrastructure automation across
+                    bare metal environments. Strong focus on reliability, performance, and reducing operational toil
+                    through internal tooling.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#missions" class="btn btn-primary">View Missions</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hologram">
+                    <img src="amith-profile.jpg" alt="AMITH" class="hologram-image">
+                    <div class="hologram-border"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="experience">
+        <h2>COMBAT HISTORY</h2>
+        <div class="experience-timeline">
+            <div class="experience-card" style="border-left-color: #00d4ff;">
+                <div class="experience-header">
+                    <h3>Site Reliability Engineer</h3>
+                    <p class="company">PhonePe Private Limited, Bangalore</p>
+                    <p class="period">July 2024 - Present</p>
+                </div>
+                <ul class="experience-details">
+                    <li>Participate in 24x7 on-call rotations for staging and production environments, responding to incidents and troubleshooting issues to maintain service availability</li>
+                    <li>Manage the NGINX edge layer serving millions of requests per second, supporting configuration changes and zero-downtime deployments</li>
+                    <li>Administer distributed data systems including MySQL Galera, Percona, and Aerospike, handling schema changes, truncates, checksums, and production maintenance tasks</li>
+                    <li>Built and maintained observability infrastructure for 800+ hosts using Prometheus, Grafana, InfluxDB, Zabbix, Riemann, and PMM, improving infrastructure visibility and issue detection</li>
+                    <li>Designed and operated high-availability clusters for Percona/MariaDB, RabbitMQ, Elasticsearch, and Aerospike on bare metal infrastructure with KVM/QEMU</li>
+                    <li>Developed internal automation tools including a Slackbot that improved operational efficiency by 70%, a JIRA request portal, and a CMR generator that reduced documentation work from hours to seconds</li>
+                </ul>
+            </div>
+
+            <div class="experience-card" style="border-left-color: #a66bff;">
+                <div class="experience-header">
+                    <h3>Site Reliability Engineer Intern</h3>
+                    <p class="company">PhonePe Private Limited, Bangalore</p>
+                    <p class="period">February 2024 - July 2024</p>
+                </div>
+                <ul class="experience-details">
+                    <li>Completed training in Linux systems, distributed databases, and configuration management tools</li>
+                    <li>Developed monitoring project for system states, including services, CPU usage, and memory usage, using SaltStack for configuration management and MongoDB for data storage</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- POWERS SECTION -->
+    <section id="powers" class="powers">
+        <h2>POWERS & ABILITIES</h2>
+        <div class="powers-grid">
+            <div class="power-card">
+                <div class="power-icon">📊</div>
+                <h3>OBSERVABILITY ARCHITECT</h3>
+                <p>Expert in building observability infrastructure for 800+ hosts. Prometheus, Grafana, InfluxDB expertise.</p>
+                <div class="skill-tags">
+                    <span class="tag">Prometheus</span>
+                    <span class="tag">Grafana</span>
+                    <span class="tag">InfluxDB</span>
+                    <span class="tag">Zabbix</span>
+                    <span class="tag">Riemann</span>
+                    <span class="tag">PMM</span>
+                </div>
+            </div>
+
+            <div class="power-card">
+                <div class="power-icon">🗄️</div>
+                <h3>DISTRIBUTED DATABASE MASTER</h3>
+                <p>Manage and operate high-availability clusters for MySQL Galera, Percona, Aerospike, and RabbitMQ.</p>
+                <div class="skill-tags">
+                    <span class="tag">MySQL Galera</span>
+                    <span class="tag">Percona</span>
+                    <span class="tag">Aerospike</span>
+                    <span class="tag">RabbitMQ</span>
+                    <span class="tag">Elasticsearch</span>
+                    <span class="tag">MariaDB</span>
+                </div>
+            </div>
+
+            <div class="power-card">
+                <div class="power-icon">⚙️</div>
+                <h3>CONFIGURATION AUTOMATION</h3>
+                <p>Infrastructure automation and configuration management using SaltStack, Ansible, and Bash scripting.</p>
+                <div class="skill-tags">
+                    <span class="tag">SaltStack</span>
+                    <span class="tag">Ansible</span>
+                    <span class="tag">Bash Scripting</span>
+                    <span class="tag">Python Automation</span>
+                    <span class="tag">Infrastructure Code</span>
+                </div>
+            </div>
+
+            <div class="power-card">
+                <div class="power-icon">🌐</div>
+                <h3>EDGE LAYER OPERATOR</h3>
+                <p>Manage NGINX edge layer serving millions of requests per second with zero-downtime deployments.</p>
+                <div class="skill-tags">
+                    <span class="tag">NGINX</span>
+                    <span class="tag">TCP/IP</span>
+                    <span class="tag">DNS</span>
+                    <span class="tag">Load Balancing</span>
+                    <span class="tag">Keepalived</span>
+                </div>
+            </div>
+
+            <div class="power-card">
+                <div class="power-icon">🔧</div>
+                <h3>BARE METAL VIRTUALIZATION</h3>
+                <p>Design and operate HA clusters on bare metal infrastructure with KVM/QEMU hypervisor-based virtualization.</p>
+                <div class="skill-tags">
+                    <span class="tag">KVM</span>
+                    <span class="tag">QEMU</span>
+                    <span class="tag">Bare Metal</span>
+                    <span class="tag">HA Clusters</span>
+                    <span class="tag">Hypervisor</span>
+                </div>
+            </div>
+
+            <div class="power-card">
+                <div class="power-icon">🚀</div>
+                <h3>INTERNAL TOOLING ENGINEER</h3>
+                <p>Developed Slackbot (70% efficiency gain), JIRA portals, and CMR generator (hours to seconds).</p>
+                <div class="skill-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Slackbot</span>
+                    <span class="tag">GitLab CI/CD</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">Automation Tools</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISSIONS SECTION -->
+    <section id="missions" class="missions">
+        <h2>COMPLETED MISSIONS AT PHONPE</h2>
+        <div class="missions-timeline">
+            <div class="mission-card">
+                <div class="mission-status">⚡ ACTIVE</div>
+                <h3>24x7 Production On-Call Operations</h3>
+                <p>Participate in round-the-clock on-call rotations for staging and production environments, responding to incidents and troubleshooting issues to maintain service availability for millions of users.</p>
+                <div class="mission-details">
+                    <span class="detail">Uptime: 99.9%+</span>
+                    <span class="detail">Response Time: &lt; 5 mins</span>
+                </div>
+            </div>
+
+            <div class="mission-card">
+                <div class="mission-status">✓ OPERATIONAL</div>
+                <h3>NGINX Edge Layer Management</h3>
+                <p>Manage and operate the NGINX edge layer serving millions of requests per second. Execute configuration changes and implement zero-downtime deployments with precision.</p>
+                <div class="mission-details">
+                    <span class="detail">Requests/sec: Millions</span>
+                    <span class="detail">Downtime: Zero</span>
+                </div>
+            </div>
+
+            <div class="mission-card">
+                <div class="mission-status">✓ OPERATIONAL</div>
+                <h3>Distributed Database Administration</h3>
+                <p>Administer and maintain distributed data systems including MySQL Galera, Percona, and Aerospike. Execute schema changes, checksums, truncates, and production maintenance tasks.</p>
+                <div class="mission-details">
+                    <span class="detail">Systems: 3 Major DBs</span>
+                    <span class="detail">Availability: HA Clusters</span>
+                </div>
+            </div>
+
+            <div class="mission-card">
+                <div class="mission-status">✓ COMPLETED</div>
+                <h3>Observability Infrastructure (800+ Hosts)</h3>
+                <p>Built and maintained comprehensive observability infrastructure for 800+ hosts using Prometheus, Grafana, InfluxDB, Zabbix, Riemann, and PMM. Dramatically improved infrastructure visibility and incident detection.</p>
+                <div class="mission-details">
+                    <span class="detail">Hosts Monitored: 800+</span>
+                    <span class="detail">Detection: Real-time</span>
+                </div>
+            </div>
+
+            <div class="mission-card">
+                <div class="mission-status">✓ COMPLETED</div>
+                <h3>High-Availability Cluster Design</h3>
+                <p>Designed and operated high-availability clusters for Percona/MariaDB, RabbitMQ, Elasticsearch, and Aerospike on bare metal infrastructure using KVM/QEMU virtualization.</p>
+                <div class="mission-details">
+                    <span class="detail">Clusters: 4 Systems</span>
+                    <span class="detail">Reliability: Enterprise Grade</span>
+                </div>
+            </div>
+
+            <div class="mission-card">
+                <div class="mission-status">✓ COMPLETED</div>
+                <h3>CMR Generator & Automation Tools</h3>
+                <p>Sole developer of production automation platform generating 1500+ CMRs and database scripts. Implemented error-zero steps architecture for DB alters and deployment scripts, reducing production incidents to nearly 0%. Also developed Slackbot (70% efficiency boost) and JIRA portal.</p>
+                <div class="mission-details">
+                    <span class="detail">CMRs Generated: 1500+</span>
+                    <span class="detail">Production Errors: ~0%</span>
+                    <span class="detail">Sole Developer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARSENAL SECTION -->
+    <section id="arsenal" class="arsenal">
+        <h2>ARSENAL INVENTORY</h2>
+        <div class="arsenal-categories">
+            <div class="arsenal-category">
+                <h3>PROGRAMMING & SCRIPTING</h3>
+                <div class="tools-grid">
+                    <div class="tool">Python</div>
+                    <div class="tool">Bash Scripting</div>
+                    <div class="tool">Shell</div>
+                    <div class="tool">Linux Proficient</div>
+                </div>
+            </div>
+
+            <div class="arsenal-category">
+                <h3>CONFIGURATION MANAGEMENT</h3>
+                <div class="tools-grid">
+                    <div class="tool">SaltStack</div>
+                    <div class="tool">Ansible</div>
+                    <div class="tool">In-house Tools</div>
+                    <div class="tool">Automation</div>
+                </div>
+            </div>
+
+            <div class="arsenal-category">
+                <h3>MONITORING & OBSERVABILITY</h3>
+                <div class="tools-grid">
+                    <div class="tool">Prometheus</div>
+                    <div class="tool">Grafana</div>
+                    <div class="tool">InfluxDB</div>
+                    <div class="tool">Zabbix</div>
+                    <div class="tool">Riemann</div>
+                    <div class="tool">PMM</div>
+                </div>
+            </div>
+
+            <div class="arsenal-category">
+                <h3>DATABASES & DATA SYSTEMS</h3>
+                <div class="tools-grid">
+                    <div class="tool">MySQL Galera</div>
+                    <div class="tool">Percona</div>
+                    <div class="tool">MariaDB</div>
+                    <div class="tool">Aerospike</div>
+                    <div class="tool">RabbitMQ</div>
+                    <div class="tool">Elasticsearch</div>
+                </div>
+            </div>
+
+            <div class="arsenal-category">
+                <h3>VIRTUALIZATION & INFRASTRUCTURE</h3>
+                <div class="tools-grid">
+                    <div class="tool">KVM</div>
+                    <div class="tool">QEMU</div>
+                    <div class="tool">Bare Metal</div>
+                    <div class="tool">HA Systems</div>
+                    <div class="tool">Hypervisor</div>
+                    <div class="tool">Keepalived</div>
+                </div>
+            </div>
+
+            <div class="arsenal-category">
+                <h3>VERSION CONTROL & CI/CD</h3>
+                <div class="tools-grid">
+                    <div class="tool">Git</div>
+                    <div class="tool">GitLab</div>
+                    <div class="tool">GitLab CI/CD</div>
+                    <div class="tool">Pipelines</div>
+                    <div class="tool">Slackbot</div>
+                    <div class="tool">Automation</div>
+                </div>
+            </div>
+
+            <div class="arsenal-category">
+                <h3>NETWORKING & SECURITY</h3>
+                <div class="tools-grid">
+                    <div class="tool">TCP/IP</div>
+                    <div class="tool">DNS</div>
+                    <div class="tool">IP Tables</div>
+                    <div class="tool">Load Balancing</div>
+                    <div class="tool">NGINX</div>
+                    <div class="tool">HA Architecture</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <h2>INITIATE CONTACT</h2>
+        <div class="contact-content">
+            <p>Ready to join the mission? Let's collaborate on building robust, scalable infrastructure.</p>
+            <div class="contact-links">
+                <a href="mailto:amithraveendra23@gmail.com" class="contact-btn">📧 Email</a>
+                <a href="https://www.linkedin.com/in/amith-raveendra/" target="_blank" class="contact-btn">💼 LinkedIn</a>
+                <a href="https://github.com/amithraveendra/" target="_blank" class="contact-btn">🔗 GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AMITH - SRE Agent. Protecting infrastructure across the digital multiverse.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
