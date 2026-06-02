@@ -724,16 +724,7 @@ body {
     font-weight: 700;
 }
 
-@media (max-width: 768px) {
-    .education-card {
-        flex-direction: column;
-        text-align: center;
-        padding: 2rem;
-    }
-    .edu-meta {
-        justify-content: center;
-    }
-}
+
 
 /* CONTACT SECTION */
 .contact {
@@ -792,17 +783,76 @@ footer {
     font-size: 0.9rem;
 }
 
-/* RESPONSIVE */
+/* HAMBURGER BUTTON */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1100;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: var(--neon-blue);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 6px var(--neon-blue);
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* RESPONSIVE — 768px */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        padding: 1rem;
-        gap: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1rem 1.5rem;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: flex;
     }
 
     .nav-links {
-        gap: 1rem;
-        font-size: 0.8rem;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        padding: 0.5rem 0;
+        border-top: 1px solid rgba(0, 212, 255, 0.3);
+        margin-top: 0.5rem;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 0.7rem 0.5rem;
+        font-size: 0.85rem;
+        border-radius: 4px;
     }
 
     .hero-content {
@@ -827,6 +877,16 @@ footer {
         height: 200px;
     }
 
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .experience h2,
+    .education h2,
     .powers h2,
     .missions h2,
     .arsenal h2,
@@ -834,7 +894,91 @@ footer {
         font-size: 2rem;
     }
 
+    .experience-timeline {
+        grid-template-columns: 1fr;
+    }
+
+    .arsenal-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .education-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+
+    .edu-meta {
+        justify-content: center;
+    }
+}
+
+/* RESPONSIVE — 480px (small phones) */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .hero {
+        padding: 7rem 1rem 2rem;
+    }
+
+    .hero-card {
+        padding: 1.5rem;
+    }
+
+    .hero-name {
+        font-size: 1.9rem;
+    }
+
+    .hero-title {
+        font-size: 1.1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.85rem;
+    }
+
     .tools-grid {
         grid-template-columns: 1fr;
+    }
+
+    .mission-details {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-btn {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    .experience h2,
+    .education h2,
+    .powers h2,
+    .missions h2,
+    .arsenal h2,
+    .contact h2 {
+        font-size: 1.6rem;
+    }
+
+    .experience,
+    .powers,
+    .missions,
+    .arsenal,
+    .education,
+    .contact {
+        padding: 4rem 1rem;
     }
 }
